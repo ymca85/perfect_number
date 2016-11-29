@@ -50,11 +50,29 @@ public class PerfectNumberTests {
 	}
 	
 	@Test
-	public void testGetSumOfFactorsOfNumber() {
+	public void testGetSumOfFactorsOfNumberForValueSix() {
 		
 		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
 		int numberToTest = 6;
-		assertTrue(perfectNumberChecker.getSumOfFactorsOfNumber(numberToTest) > 0);
+		assertTrue(perfectNumberChecker.getSumOfFactorsOfNumber(numberToTest) == numberToTest);
+		
+	}
+	
+	@Test
+	public void testGetSumOfFactorsOfNumberForValueTwentyEight() {
+		
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
+		int numberToTest = 28;
+		assertTrue(perfectNumberChecker.getSumOfFactorsOfNumber(numberToTest) == numberToTest);
+		
+	}
+	
+	@Test
+	public void testGetSumOfFactorsOfNumberForNonPerfectNumber() {
+		
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
+		int numberToTest = 100;
+		assertFalse(perfectNumberChecker.getSumOfFactorsOfNumber(numberToTest) == numberToTest);
 		
 	}
 	
