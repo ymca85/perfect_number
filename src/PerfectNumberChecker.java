@@ -4,13 +4,13 @@ public class PerfectNumberChecker {
 	private final int NUMBER_ZERO = 0;
 
 	public boolean isPerfectNumber(int numberToTest) {
-		if (isNumberPositive(numberToTest)) {
+		if (isNumberValidToCheck(numberToTest)) {
 			return false;
 		}
-		return true;
+		return (numberToTest == getSumOfFactorsOfNumber(numberToTest));
 	}
 
-	private boolean isNumberPositive(int numberToTest) {
+	private boolean isNumberValidToCheck(int numberToTest) {
 		return numberToTest < NUMBER_ZERO;
 	}
 
