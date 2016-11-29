@@ -1,7 +1,7 @@
 
 public class PerfectNumberChecker {
 
-	private final int NUMBER_ZERO = 0;
+	private final int NUMBER_TWO = 2;
 
 	public boolean isPerfectNumber(int numberToTest) {
 		if (isNumberValidToCheck(numberToTest)) {
@@ -11,7 +11,7 @@ public class PerfectNumberChecker {
 	}
 
 	private boolean isNumberValidToCheck(int numberToTest) {
-		return numberToTest < NUMBER_ZERO;
+		return numberToTest < NUMBER_TWO;
 	}
 
 	public int getSumOfFactorsOfNumber(int numberToTest) {
