@@ -12,5 +12,14 @@ public class PerfectNumberTests {
 		assertTrue(perfectNumberChecker.isPerfectNumber(numberToTest));
 		
 	}
+	
+	@Test
+	public void testIsPerfectNumberForNegativeNumber() {
+		
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
+		int numberToTest = -6;
+		assertFalse(perfectNumberChecker.isPerfectNumber(numberToTest));
+		
+	}
 
 }
