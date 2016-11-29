@@ -8,7 +8,8 @@ public class PerfectNumberTests {
 	public void testPerfectNumber() {
 		
 		PerfectNumber perfectNumber = new PerfectNumber();
-		perfectNumber.isPerfectNumber();
+		int numberToTest = 6;
+		assertTrue(perfectNumber.isPerfectNumber(numberToTest));
 		
 	}
 

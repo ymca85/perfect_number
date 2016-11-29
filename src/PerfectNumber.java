@@ -1,8 +1,8 @@
 
 public class PerfectNumber {
 
-	public void isPerfectNumber() {
-		
+	public boolean isPerfectNumber(int numberToTest) {
+		return false;
 	}
 
 }
