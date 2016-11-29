@@ -14,4 +14,8 @@ public class PerfectNumberChecker {
 		return numberToTest < NUMBER_ZERO;
 	}
 
+	public int getSumOfFactorsOfNumber(int numberToTest) {
+		return 0;
+	}
+
 }

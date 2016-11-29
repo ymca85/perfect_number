@@ -21,5 +21,14 @@ public class PerfectNumberTests {
 		assertFalse(perfectNumberChecker.isPerfectNumber(numberToTest));
 		
 	}
-
+	
+	@Test
+	public void testGetSumOfFactorsOfNumber() {
+		
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
+		int numberToTest = 6;
+		assertTrue(perfectNumberChecker.getSumOfFactorsOfNumber(numberToTest) > 0);
+		
+	}
+	
 }
