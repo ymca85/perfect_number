@@ -1,6 +1,9 @@
 
 public class PerfectNumberChecker {
 
+	private final int MAX_VALUE = 10000;
+	private final int MIN_VALUE = 0;
+
 	public static void main(String[] args) {
 
 		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
@@ -15,7 +18,7 @@ public class PerfectNumberChecker {
 	}
 
 	private boolean isNumberValidToCheck(int numberToTest) {
-		if(numberToTest > 0 && numberToTest <= 10000) {
+		if(numberToTest > MIN_VALUE && numberToTest <= MAX_VALUE) {
 			return true;
 		}
 		return false;
