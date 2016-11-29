@@ -2,10 +2,14 @@
 public class PerfectNumberChecker {
 
 	public boolean isPerfectNumber(int numberToTest) {
-		if(numberToTest < 0) {
+		if(isNumberPositive(numberToTest)) {
 			return false;
 		}
 		return true;
+	}
+
+	private boolean isNumberPositive(int numberToTest) {
+		return numberToTest < 0;
 	}
 
 }
