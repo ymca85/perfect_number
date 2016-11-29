@@ -23,6 +23,24 @@ public class PerfectNumberTests {
 	}
 	
 	@Test
+	public void testIsPerfectNumberForNumberZero() {
+		
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
+		int numberToTest = 0;
+		assertFalse(perfectNumberChecker.isPerfectNumber(numberToTest));
+		
+	}
+	
+	@Test
+	public void testIsPerfectNumberForNumberOne() {
+		
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
+		int numberToTest = 1;
+		assertFalse(perfectNumberChecker.isPerfectNumber(numberToTest));
+		
+	}
+	
+	@Test
 	public void testGetSumOfFactorsOfNumber() {
 		
 		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
