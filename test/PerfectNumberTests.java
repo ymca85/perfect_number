@@ -5,11 +5,11 @@ import org.junit.Test;
 public class PerfectNumberTests {
 
 	@Test
-	public void testPerfectNumber() {
+	public void testIsPerfectNumber() {
 		
-		PerfectNumber perfectNumber = new PerfectNumber();
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
 		int numberToTest = 6;
-		assertTrue(perfectNumber.isPerfectNumber(numberToTest));
+		assertTrue(perfectNumberChecker.isPerfectNumber(numberToTest));
 		
 	}
 
