@@ -1,6 +1,8 @@
 
 public class PerfectNumberChecker {
 
+	private final int NUMBER_ZERO = 0;
+
 	public boolean isPerfectNumber(int numberToTest) {
 		if(isNumberPositive(numberToTest)) {
 			return false;
@@ -9,7 +11,7 @@ public class PerfectNumberChecker {
 	}
 
 	private boolean isNumberPositive(int numberToTest) {
-		return numberToTest < 0;
+		return numberToTest < NUMBER_ZERO;
 	}
 
 }
