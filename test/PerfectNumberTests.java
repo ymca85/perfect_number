@@ -23,6 +23,15 @@ public class PerfectNumberTests {
 	}
 	
 	@Test
+	public void testIsPerfectNumberForNumberOutOfRange() {
+		
+		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
+		int numberToTest = 33550336;
+		assertFalse(perfectNumberChecker.isPerfectNumber(numberToTest));
+		
+	}
+	
+	@Test
 	public void testIsPerfectNumberForNumberZero() {
 		
 		PerfectNumberChecker perfectNumberChecker = new PerfectNumberChecker();
