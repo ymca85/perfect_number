@@ -15,7 +15,10 @@ public class PerfectNumberChecker {
 	}
 
 	private boolean isNumberValidToCheck(int numberToTest) {
-		return numberToTest > 0;
+		if(numberToTest > 0 && numberToTest <= 10000) {
+			return true;
+		}
+		return false;
 	}
 
 	public int getSumOfFactorsOfNumber(int numberToTest) {
